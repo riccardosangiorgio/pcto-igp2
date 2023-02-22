@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 03</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello world!</h1>
+</body>
+<script type="text/javascript">
+
+    // This is a comment
+    console.log("Hello world!");
+
+    // Variables and Data types
+    let name = "John";
+    let age = 30;
+    let isMarried = false;
+    let children = null;
+    let car = undefined;
+
+    console.log(typeof name);
+    console.log(typeof age);
+    console.log(typeof isMarried);
+    console.log(typeof children);
+    console.log(typeof car);
+
+    // Operators
+    let a = 10;
+    let b = 20;
+    let c = a + b;
+    console.log(c);
+
+    // Conditional statements
+    if (a > b) {
+        console.log("a is greater than b");
+    } else {
+        console.log("b is greater than a");
+    }
+
+    // Loops
+    for (let i = 0; i < 10; i++) {
+        console.log(i);
+    }
+
+    let i = 0;
+    while (i < 10) {
+        console.log(i);
+        i++;
+    }
+
+    // Functions
+
+    function add (a, b) {
+        return a + b;
+    }
+
+    console.log(add(10, 20));
+
+    // Arrays
+
+    let arr = [1, 2, 3, 4, 5];
+    console.log(arr);
+    console.log(arr[0]);
+
+    // Objects
+
+    let person = {
+        name: "John",
+        age: 30,
+        isMarried: false,
+        children: null,
+        car: undefined
+    };
+
+    console.log(person);
+
+    // DOM
+
+    let h1 = document.querySelector("h1");
+
+    console.log(h1)
+
+    h1.innerHTML = "Hello world!";
+    h1.style.color = "red";
+    h1.style.backgroundColor = "black";
+    h1.style.padding = "10px";
+    h1.style.borderRadius = "5px";
+    h1.style.textAlign = "center";
+    h1.style.fontFamily = "sans-serif";
+    h1.style.fontSize = "50px";
+    h1.style.fontWeight = "bold";
+    h1.style.textTransform = "uppercase";
+    h1.style.boxShadow = "0 0 10px #000";
+    h1.style.transition = "all 0.5s ease";
+
+    h1.addEventListener("mouseover", function () {
+        h1.style.color = "black";
+        h1.style.backgroundColor = "red";
+    });
+
+    h1.addEventListener("mouseout", function () {
+        h1.style.color = "red";
+        h1.style.backgroundColor = "black";
+    });
+
+    // Cookies
+
+    document.cookie = "name=John";
+    document.cookie = "age=30";
+    document.cookie = "isMarried=false";
+
+    console.log(document.cookie);
+
+    // Local Storage
+
+    localStorage.setItem("name", "John");
+    localStorage.setItem("age", 30);
+    localStorage.setItem("isMarried", false);
+
+    console.log(localStorage.getItem("name"));
+
+
+</script>
+</html>
